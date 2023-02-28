@@ -1,2 +1,3 @@
 # recognition-chinese-chess
-利用opencv识别象棋及棋谱定位，构思中
+
+利用 opencv 识别象棋及棋谱定位
