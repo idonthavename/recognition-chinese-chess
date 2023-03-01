@@ -1,11 +1,12 @@
 # encoding: utf-8
 
+import sys
 import cv2 as cv
 import numpy as np
 from PIL import Image
 from matplotlib import pyplot as plt
 
-path = './4.jpg'
+path = './5.jpg'
 
 
 if __name__ == '__main__':  # 主程序
@@ -23,6 +24,8 @@ if __name__ == '__main__':  # 主程序
     cv.imshow("edges", edges)
 
     lines = cv.HoughLines(edges, 1, np.pi/180, 200)
+
+    sx = zx = []
 
     for line in lines:
         rho, theta = line[0]
